@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Inicio</title>
+
+    <meta charset="utf-8">
+    <meta name="author" content="Sandra Arcas">
+    <meta name="description" content="Librería online">
+    <meta name="keywords" content="libros ">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icon/icono_libreria.ico">
+
+    <!--Estilos CSS-->
+    <link rel="stylesheet" href="css/main.css">
+    <!--Letras google fonts-->
+
+
+</head>
+
+<body>
+
+
+    <!--CABECERA-->
+    <header>
+
+        <img id="logo" src="img/icon/icono.png" alt="logo librería Leo">
+        <h1><strong>Libros y comics de colección</strong></h1>
+
+        <a href="#"><img src="img/icon/user.png" alt="Icono persona" /> Identifícate</a>
+        <a href="#"><img src="img/icon/cart.png" alt="icono carrito compra onlie" /> Carro</a>
+
+
+    </header>
+
+
+    <!--MENÚ-->
+    <div id="navegacion">
+        <nav>
+            <ul>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">NOVEDADES</a></li>
+                <li><a href="#">LO MÁS VENDIDO</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!--SECCIÓN DE LIBROS (SE PODRÍA PONER OTRA DE COMICS POR EJM-->
+
+    <section>
+
+        <article class="buscador">
+            <form>
+                <input type="search" name="busqueda" placeholder="Introduce título, autor, género..." />
+                <input type="submit" value=Buscar>
+            </form>
+        </article>
+
+        <!--  Ojo con este título. Lo he sacado porque me descuajeringa el maquetado de los más vendidos, pero 
+      debería ponerlo dentro del artículo y preguntar a Albert cómo hacerlo para quitarle la propiedad flex 
+      que le he puesto al contenedor padre  -->
+
+        <h2 class="titulo">Los más vendidos</h2>
+
+        <article class="carrusel-destacados">
+            <!--<h2 class="titulo">Los más vendidos</h2>-->
+            <a href="#" class="item">
+                <img src="img/portada-libro_el-enigma-de-la-habitacion-622.jpg" alt="Portada libro El enigma de la habitación 622">
+                <p>El enigma de la habitación 622</p>
+                <p class="autor">Joël Dicker</p>
+                <p>9.50€</p>
+            </a>
+
+            <a href="#" class="item">
+                <img src="img/portada-libro_la-gran-manipulacion.jpg" alt="Portada libro La gran manipulación">
+                <p>La gran manipulación</p>
+                <p class="autor">Jano García</p>
+                <p>12.50€</p>
+            </a>
+
+            <a href="#" class="item">
+                <img src="img/portada-libro_la-nena.jpg" alt="Portada libro La nena">
+                <p>La nena</p>
+                <p class="autor">Carmen Mola</p>
+                <p>11.95€</p>
+            </a>
+
+            <a href="#" class="item">
+                <img src="img/portada-libro_la-vida-desnuda.jpg" alt="Portada libro La vida desnuda">
+                <p>La vida desnuda</p>
+                <p class="autor">Mónica Carrillo</p>
+                <p>10.50€</p>
+            </a>
+
+            <a href="#" class="item">
+                <img src="img/portada-libro_mil-besos-prohibidos_sonsoles-onega.jpg" alt="Portada libro Mil besos prohibidos">
+                <p>Mil besos prohibidos</p>
+                <p class="autor">Sonsoles Ónega</p>
+                <p>21.90€</p>
+            </a>
+
+        </article>
+
+
+    </section>
+
+    <aside>
+    </aside>
+
+
+    <!--PIE-->
+
+    <footer>
+        <div class="contenedor-pie">
+            <p>Sobre nosotros</p>
+            <a class="item-pie" href="#">Quienes somos</a>
+            <a class="item-pie" href="#">Contacta</a>
+            <a class="item-pie" href="#">Librerías</a>
+        </div>
+
+        <div class="contenedor-pie">
+            <p>Preguntas frecuentes</p>
+            <a class="item-pie" href="#">FAQ's</a>
+            <a class="item-pie" href="#">Métodos de pago</a>
+            <a class="item-pie" href="#">Devoluciones</a>
+        </div>
+
+
+    </footer>
+
+    <p id="copyright">Página web hecha con <s>mucho amor</s> mucha paciencia por Sandra</p>
+
+</body>
+
+</html>
