@@ -25,6 +25,7 @@ blockquote {
 }
 
 /*OJO: Pongo colores de fondo para tener claras las secciones. luego los eliminaré*/
+/*
 html {
     background: gray;
 }
@@ -44,16 +45,15 @@ body {
 }
 
 .carrusel-destacados {
-    background: green;
+    background: blue;
 }
 
-footer {
-    background: black;
-}
+
 
 .contenedor-pie {
     background: red;
 }
+*/
 
 /*A partir de aquí empiezo a poner estilos*/
 
@@ -63,7 +63,7 @@ footer {
 
 /*Estilos generales*/
 html {
-    width: 80%;
+    /*    width: 80%;*/
     margin: 0 auto;
     font-family: 'Questrial', sans-serif;
     font-size: 1.1rem;
@@ -101,37 +101,24 @@ header a {
     color: black;
 }
 
+header a:hover {
+    text-decoration: none;
+    ;
+}
+
 /*Estilos para la barra de navegación*/
 
-#navegacion {
-    background: black;
-    padding: 10px 20px;
+
+.nav-link:hover {
+    border-bottom: 1px solid white;
+}
+
+.dropdown-item:hover {
+    border-bottom: 1px solid black;
 }
 
 
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-nav a:hover {
-
-    border-bottom: 2px solid white;
-
-}
-
-nav ul {
-
-    display: flex;
-    justify-content: flex-start;
-    list-style: none;
-}
-
-nav ul li {
-    padding-right: 30px;
-}
-
+/* Estilos para el buscador*/
 .buscador {
     display: flex;
     padding: 20px 0px;
@@ -139,7 +126,7 @@ nav ul li {
 
 .buscador form {
     margin: auto;
-
+    flex-wrap: nowrap;
 }
 
 /*Estilos para lo que será el carrusel de los libros más vendidos*/
@@ -157,12 +144,17 @@ nav ul li {
 }
 
 .carrusel-destacados p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     text-align: center;
+    color: white;
+
 }
 
-.autor {
-    color: gray;
+.carrusel-destacados .autor {
+
+    color: palevioletred;
+    font-style: italic;
+
 }
 
 
@@ -173,6 +165,7 @@ footer {
     display: flex;
     justify-content: space-around;
     font-size: 0.8rem;
+    background: black;
 
 }
 
@@ -194,13 +187,20 @@ footer {
 
 }
 
+footer p,
+footer a {
+    color: white;
+}
+
+
+footer a:hover {
+    color: white;
+}
+
+
 #copyright {
     text-align: center;
     padding: 10px 0px;
     font-size: 0.7rem;
-}
 
-footer p,
-footer a {
-    color: white;
 }
